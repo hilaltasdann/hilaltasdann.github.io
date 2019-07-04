@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multitravel - Presentation</title>
+  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="fullpage.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style type="text/css">
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+        #menu, #content1 {float: top;
+        transition: top 2s;
+        }
+        #menu {visibility: hidden; opacity: 0; text-align: center; transition: opacity 1500ms, visibility 1500ms;}
+        #menu.active {visibility: visible; opacity: 1; animation-delay: 10s;}
+        #content1 {position: relative; top: 0px;}
+        #content1.active {top: -280px;}
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+
+    <div id="app">
+        <div class="footer">
+            <div class="img">
+                <img src="1.gif" alt="">
+            </div>
+        </div>
+        <full-page :options="options" id="fullpage" ref="fullpage">
+            <div class="section">
+                <div class="slide">
+                    <div class="content">
+                        <div id="content1">
+                            <a href="#" id="toggle">
+                                <img border="0" alt="" src="travenna_logo_invert.png">
+                            </a>
+                        </div>
+                        <div id="menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="description">
+                                                It is the technological solution in which travel management can reduce operational burden while benefiting from appropriate fees, advantages and campaigns in the market in line with the travel policies of the companies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row mb-60">
+                                <div class="col-12">
+                                    <h3>Services</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="mb-40" src="travel.png" width="128" height="128" alt="">
+                                    <h4>Flight Ticket</h4>
+                                </div>
+                                <div class="col-3">
+                                    <img class="mb-40" src="bell.png" width="128" height="128" alt="">
+                                    <h4>Hotel Reservation</h4>
+                                </div>
+                                <div class="col-3">
+                                    <img class="mb-40" src="rent.png" width="128" height="128" alt="">
+                                    <h4>Rent a Car</h4>
+                                </div>
+                                <div class="col-3">
+                                    <img class="mb-40" src="taxi.png" width="128" height="128" alt="">
+                                    <h4>Transfer</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 mb-60"><h3>Benefits</h3></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 mb-20">
+                                    <img class="mb-10" src="business-travel.png" width="128" height="128" alt="">
+                                    <h5>Corporate Travel Management</h5>
+                                </div>
+                                <div class="col-4 mb-40">
+                                    <img class="mb-10" src="connection.png" width="128" height="128" alt="">
+                                    <h5>Decrease Operational Workforce</h5>
+                                </div>
+                                <div class="col-4 mb-40">
+                                    <img class="mb-10" src="budget.png" width="128" height="128" alt="">
+                                    <h5>Cost & Bugdet Control</h5>
+                                </div>
+                                <div class="col-4 mb-40">
+                                    <img class="mb-10" src="debit-card.png" width="128" height="128" alt="">
+                                    <h5>Facility of Payment</h5>
+                                </div>
+                                <div class="col-4 mb-40">
+                                    <img class="mb-10" src="access.png" width="128" height="128" alt="">
+                                    <h5>Authentication</h5>
+                                </div>
+                                <div class="col-4 mb-40">
+                                    <img class="mb-10" src="report.png" width="128" height="128" alt="">
+                                    <h5>Easy to Report</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="slide">
+                    <div class="content">
+                        <div class="container">
+                            <h3>Customer ?</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row colorbg">
+                                <div class="col-6">
+                                    <img class="xms" src="bg1.png" width="100%" height="500px" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <ul class="text-anim">
+                                        <li><h4>User</h4></li>
+                                        <li><p>25-45 years old</p></li>
+                                        <li><p>All Management Level</p></li>
+                                        <li><p>Professional</p></li>
+                                        <li><p>Busy</p></li>
+                                        <li><p>Don't Like Business Travel</p></li>
+                                        <li><p>Don't Want to Separate Time to Arrange a Travel</p></li>
+                                        <li><p>Adapted to Use a Software Solution</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <div class="container">
+                            <div class="row colorbg">
+                                <div class="col-6">
+                                    <img class="xms" src="group.png" width="100%" height="500px" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <ul class="text-anim">
+                                        <li><h4>Buyer</h4></li>
+                                        <li><p>30-40 years old</p></li>
+                                        <li><p>Senior Level Managers</p></li>
+                                        <li><p>Purchasing & IK Manager</p></li>
+                                        <li><p>Professional</p></li>
+                                        <li><p>Looking Forward to Develop Organization of Their Companies</p></li>
+                                        <li><p>Willing to Make Employees Happy</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="slide">
+                    <div class="content">
+                        <img src="iletilendata.png" width="90%" height="400px" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <div class="chart-container">
+                            <div class="doughnut-chart-container">
+                                <canvas id="doughnut-chartcanvas-1"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <img src="focusSector.png" width="70%" height="400px" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <img src="potentialCustomer.png" width="60%" height="400px" alt="">
+                    </div>
+                </div>
+                <!-- <div class="slide">
+                    <div class="content" style="width:60%;">
+                        <canvas id="trend"></canvas>
+                    </div>
+                </div> -->
+            </div>
+            <div class="section">
+                <div class="slide">
+                    <div class="content30">
+                        <div id="crumbs">
+                            <ul>
+                                <li><a href="#page3/1">Acquisition</a></li>
+                            </ul>
+                        </div>
+                        <div class="container">
+                            <ul class="pagi mt-100">
+                                <li><p>Potential Otelnet Customer via brochure, telesales, sales team</p></li>
+                                <li><p>Event Stand at Brand Week IK Zirvesi etc.</p></li>
+                                <li><p>Push Notification via telecominication company</p></li>
+                                <li><p>Email Marketing</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <div class="container">
+                            <div id="crumbs">
+                                <ul>
+                                    <li><a href="#page3/1">Acquisition</a></li>
+                                    <li><a href="#">Activation</a></li>
+                                </ul>
+                            </div>
+                            <br><br>
+                            <div id="chart"></div>
+                            <div id="question"><p></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <div id="crumbs">
+                            <ul>
+                                <li><a href="#page3/1">Acquisition</a></li>
+                                <li><a href="#">Activation</a></li>
+                            </ul>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <article class="blog-card">
+                                        <div class="blog-card__background">
+                                            <div class="card__background--wrapper">
+                                                <div class="card__background--main" style="background-image: url('3.jpg'); background-position: center center;">
+                                                    <div class="card__background--layer"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="blog-card__head">
+                                            <span class="date__box"></span>
+                                        </div>
+                                        <div class="blog-card__info">
+                                            <h5>Push Notification</h5>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content30">
+                        <div id="crumbs">
+                            <ul>
+                                <li><a href="#page3/1">Acquisition</a></li>
+                                <li><a href="#">Activation</a></li>
+                                <li><a href="#">Retention</a></li>
+                            </ul>
+                        </div>
+                        <div class="container">
+                            <ul class="pagi mt-100">
+                                <li><p>Calculating Churn Score of Each Customer</p></li>
+                                <li><p>Contracting the Customer with a Good Benefit for Longlasting Contracting</p></li>
+                                <li><p>Fast Track according to Level and Number of User</p></li>
+                                <li><p>Free Lounge according to Level and Number of User</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content">
+                        <div id="crumbs">
+                            <ul>
+                                <li><a href="#">Acquisition</a></li>
+                                <li><a href="#">Activation</a></li>
+                                <li><a href="#">Retention</a></li>
+                                <li><a href="#">Revenue</a></li>
+                            </ul>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <article class="blog-card">
+                                        <div class="blog-card__background">
+                                            <div class="card__background--wrapper">
+                                                <div class="card__background--main" style="background-image: url('push.png'); background-position: center center;">
+                                                    <div class="card__background--layer"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="blog-card__head">
+                                            <span class="date__box"></span>
+                                        </div>
+                                        <div class="blog-card__info">
+                                            <h5>Push Notification</h5>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="slide">
+                    <div class="content">
+                        <div class="container">
+                            <iframe src="https://docs.google.com/spreadsheets/d/1yTKPPTVY615au-npXwjFCMNshr8eEEstMLkik7d6PLc/edit?usp=sharing" width="100%" height="720" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="slide">
+                    <div class="content">
+                        <div>
+                            <a href="#">
+                                <img border="0" alt="" src="travenna_logo_invert.png">
+                            </a>
+                        </div>
+                        <div>
+                            <img border="0" alt="" src="planegrey.gif">
+                        </div>
+                        <p>Thank you..</p>
+                    </div>
+                </div>
+            </div>
+        </full-page>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.js"></script> -->
+    <script src="vue-fullpage.js"></script>
+    <script  src="./main.js"></script>
+    <script src="./script.js"></script>
+
+    <!-- javascript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/doughnut.js"></script>
+
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var padding = {top:20, right:40, bottom:0, left:0},
+            w = 400 - padding.left - padding.right,
+            h = 400 - padding.top  - padding.bottom,
+            r = Math.min(w, h)/2,
+            rotation = 0,
+            oldrotation = 0,
+            picked = 100000,
+            oldpick = [],
+            color = d3.scale.category20();//category20c()
+            //randomNumbers = getRandomNumbers();
+        //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
+        var data = [
+                    {"label":"UÇAK",  "value":1,  "question":"TEBRİKLER ! %10 indirimli uçak bileti kazandınız."}, // uçak
+                    {"label":"ARAÇ",  "value":1,  "question":"TEBRİKLER ! %10 indirimli araç kiralama hakkı kazandınız."}, // araç
+                    {"label":"OTEL",  "value":1,  "question":"TEBRİKLER ! %10 otel rezervasyon indirimi kazandınız."}, // otel
+                    {"label":"TRANSFER",  "value":1,  "question":"TEBRİKLER ! %10 havalimanı transferi kazandınız."}, // transfer
+                    {"label":"TATLI PUAN",  "value":1,  "question":"TEBRİKLER ! 10 tatlı puan kazandınız."}, // puan
+                    {"label":"JOKER !",  "value":1,  "question":"TEBRİKLER ! çekiliş hakkı kazandınız."}, // joker
+
+        ];
+        var svg = d3.select('#chart')
+            .append("svg")
+            .data([data])
+            .attr("width",  w + padding.left + padding.right)
+            .attr("height", h + padding.top + padding.bottom);
+        var container = svg.append("g")
+            .attr("class", "chartholder")
+            .attr("transform", "translate(" + (w/2 + padding.left) + "," + (h/2 + padding.top) + ")");
+        var vis = container
+            .append("g");
+            
+        var pie = d3.layout.pie().sort(null).value(function(d){return 1;});
+        // declare an arc generator function
+        var arc = d3.svg.arc().outerRadius(r);
+        // select paths, use arc generator to draw
+        var arcs = vis.selectAll("g.slice")
+            .data(pie)
+            .enter()
+            .append("g")
+            .attr("class", "slice");
+            
+        arcs.append("path")
+            .attr("fill", function(d, i){ return color(i); })
+            .attr("d", function (d) { return arc(d); });
+        // add the text
+        arcs.append("text").attr("transform", function(d){
+                d.innerRadius = 0;
+                d.outerRadius = r;
+                d.angle = (d.startAngle + d.endAngle)/2;
+                return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius -10) +")";
+            })
+            .attr("text-anchor", "end")
+            .text( function(d, i) {
+                return data[i].label;
+            });
+        container.on("click", spin);
+        function spin(d){
+            
+            container.on("click", null);
+            //all slices have been seen, all done
+            console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
+            if(oldpick.length == data.length){
+                console.log("done");
+                container.on("click", null);
+                return;
+            }
+            var  ps       = 360/data.length,
+                 pieslice = Math.round(1440/data.length),
+                 rng      = Math.floor((Math.random() * 1440) + 360);
+                
+            rotation = (Math.round(rng / ps) * ps);
+            
+            picked = Math.round(data.length - (rotation % 360)/ps);
+            picked = picked >= data.length ? (picked % data.length) : picked;
+            if(oldpick.indexOf(picked) !== -1){
+                d3.select(this).call(spin);
+                return;
+            } else {
+                oldpick.push(picked);
+            }
+            rotation += 90 - Math.round(ps/2);
+            vis.transition()
+                .duration(3000)
+                .attrTween("transform", rotTween)
+                .each("end", function(){
+                    //mark question as seen
+                    d3.select(".slice:nth-child(" + (picked + 1) + ") path")
+                        .attr("fill", "#111");
+                    //populate question
+                    d3.select("#question p")
+                        .text(data[picked].question);
+                    oldrotation = rotation;
+                
+                    container.on("click", spin);
+                });
+        }
+        //make arrow
+        svg.append("g")
+            .attr("transform", "translate(" + (w + padding.left + padding.right) + "," + ((h/2)+padding.top) + ")")
+            .append("path")
+            .attr("d", "M-" + (r*.15) + ",0L0," + (r*.05) + "L0,-" + (r*.05) + "Z")
+            .style({"fill":"black"});
+        //draw spin circle
+        container.append("circle")
+            .attr("cx", 0)
+            .attr("cy", 0)
+            .attr("r", 60)
+            .style({"fill":"white","cursor":"pointer"});
+        //spin text
+        container.append("text")
+            .attr("x", 0)
+            .attr("y", 15)
+            .attr("text-anchor", "middle")
+            .text("SPIN")
+            .style({"font-weight":"bold", "font-size":"20px", "color":"#FFFFFF"});
+        
+        
+        function rotTween(to) {
+          var i = d3.interpolate(oldrotation % 360, rotation);
+          return function(t) {
+            return "rotate(" + i(t) + ")";
+          };
+        }
+        
+        
+        function getRandomNumbers(){
+            var array = new Uint16Array(1000);
+            var scale = d3.scale.linear().range([360, 1440]).domain([0, 100000]);
+            if(window.hasOwnProperty("crypto") && typeof window.crypto.getRandomValues === "function"){
+                window.crypto.getRandomValues(array);
+                console.log("works");
+            } else {
+                //no support for crypto, get crappy random numbers
+                for(var i=0; i < 1000; i++){
+                    array[i] = Math.floor(Math.random() * 100000) + 1;
+                }
+            }
+            return array;
+        }
+    </script>
+</body>
+</html>
