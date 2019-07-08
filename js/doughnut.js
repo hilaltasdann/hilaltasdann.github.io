@@ -57,7 +57,7 @@ $(function(){
         title: {
             display: true,
             position: "bottom",
-            text: "Bought Fly Ticket Based on Sector",
+            text: "Bought Flight Ticket Based on Sector",
             fontSize: 18,
             fontColor: "#111"
         },
